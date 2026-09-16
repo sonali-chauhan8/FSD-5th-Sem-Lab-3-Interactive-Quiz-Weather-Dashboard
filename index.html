@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz & Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Quiz & Weather Dashboard</h1>
+        <p>Test your knowledge and check the weather!</p>
+    </header>
+
+
+    <main>
+
+        <!-- QUIZ SECTION -->
+        <section id="quiz-section">
+
+            <h2>Interactive Quiz</h2>
+
+            <div id="quiz-container">
+
+                <div id="quiz-header">
+                    <p id="question-number">Question 1</p>
+
+                    <p>
+                        Time Left:
+                        <span id="timer">30</span>
+                        seconds
+                    </p>
+                </div>
+
+
+                <h3 id="question">
+                    Your question will appear here
+                </h3>
+
+
+                <div id="options">
+                    <!-- Options will be added using JavaScript -->
+                </div>
+
+
+                <button id="next-btn">
+                    Next
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT SECTION -->
+        <section id="result-section" class="hidden">
+
+            <h2>Quiz Completed!</h2>
+
+            <p>
+                Your Score:
+                <span id="score">0</span>
+            </p>
+
+
+            <input
+                type="text"
+                id="player-name"
+                placeholder="Enter your name"
+            >
+
+
+            <button id="save-score-btn">
+                Save Score
+            </button>
+
+        </section>
+
+
+        <!-- LEADERBOARD SECTION -->
+        <section id="leaderboard-section">
+
+            <h2>Leaderboard</h2>
+
+            <ol id="leaderboard">
+                <!-- Scores will be added using JavaScript -->
+            </ol>
+
+        </section>
+
+
+        <!-- WEATHER SECTION -->
+        <section id="weather-section">
+
+            <h2>Weather Dashboard</h2>
+
+
+            <div id="weather-search">
+
+                <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Enter city name"
+                >
+
+
+                <button id="search-weather-btn">
+                    Search Weather
+                </button>
+
+            </div>
+
+
+            <div id="weather-result">
+
+                <h3 id="city-name">
+                    Enter a city to check weather
+                </h3>
+
+
+                <p>
+                    Temperature:
+                    <span id="temperature">--</span>
+                </p>
+
+
+                <p>
+                    Weather:
+                    <span id="weather-condition">--</span>
+                </p>
+
+
+                <p>
+                    Humidity:
+                    <span id="humidity">--</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
